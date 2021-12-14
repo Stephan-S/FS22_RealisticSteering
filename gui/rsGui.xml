@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--
+--
+-- RealisticSteering GUI
+-- V1.0.0.0
+--
+-- @author Stephan Schlosser
+-- @date 11/01/2019
+-->
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+	<GuiElement type="bitmap" profile="uiFullInGameBackground" />
+
+	<!-- Header  -->
+	<GuiElement type="empty" profile="ingameMenuFrameHeaderPanel" position="130px -130px">
+		<GuiElement type="bitmap" profile="ingameMenuGeneralSettingsHeaderIcon" position="0px 0px"/>
+		<GuiElement type="text" profile="ingameMenuFrameHeaderText" position="80px 0px" onCreate="onCreateRSGuiHeader" text="gui_rs_Setting" />
+	</GuiElement>	
+	
+	<GuiElement type="empty" profile="ingameMenuSettingsBox" position="130px -200px">
+		<!-- column 1 -->
+		<GuiElement type="boxLayout" profile="ingameMenuSettingsLayout" position="50px -50px" >
+			<!-- Steering Speed  -->
+			<GuiElement type="multiTextOption" profile="multiTextOptionSettings" onCreate="onCreateSteeringSpeed" toolTipElementId="ingameMenuHelpBoxText" toolTipText="$l10n_gui_rs_SteeringSpeedToolTip">
+				<GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+				<GuiElement type="button" profile="multiTextOptionSettingsRight" />
+				<GuiElement type="text" profile="multiTextOptionSettingsText" />
+				<GuiElement type="text" profile="multiTextOptionSettingsTitle" text="$l10n_gui_rs_SteeringSpeed" />
+				<GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+			</GuiElement>	
+			<GuiElement type="multiTextOption" profile="multiTextOptionSettings" onCreate="onCreateSteeringAngleLimit" toolTipElementId="ingameMenuHelpBoxText" toolTipText="$l10n_gui_rs_SteeringAngleLimitToolTip">
+				<GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+				<GuiElement type="button" profile="multiTextOptionSettingsRight" />
+				<GuiElement type="text" profile="multiTextOptionSettingsText" />
+				<GuiElement type="text" profile="multiTextOptionSettingsTitle" text="$l10n_gui_rs_SteeringAngleLimit" />
+				<GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+			</GuiElement>
+			<GuiElement type="multiTextOption" profile="multiTextOptionSettings" onCreate="onCreateResetForce" toolTipElementId="ingameMenuHelpBoxText" toolTipText="$l10n_gui_rs_ResetForceToolTip">
+				<GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+				<GuiElement type="button" profile="multiTextOptionSettingsRight" />
+				<GuiElement type="text" profile="multiTextOptionSettingsText" />
+				<GuiElement type="text" profile="multiTextOptionSettingsTitle" text="$l10n_gui_rs_ResetForce" />
+				<GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+			</GuiElement>				
+		</GuiElement>		
+
+		<GuiElement type="bitmap" profile="ingameMenuHelpRowBg" position="80px 50px" id="ingameMenuHelpBox" visible="true">
+			<GuiElement type="bitmap" profile="ingameMenuHelpRowIcon" />
+			<GuiElement type="text" profile="ingameMenuHelpRowText" id="ingameMenuHelpBoxText" text="" onTextChanged="onIngameMenuHelpTextChanged"/>
+		</GuiElement>			
+	</GuiElement>
+	
+	<!-- bottom "back" + "ok"  -->
+	<GuiElement type="flowLayout" profile="buttonBoxDocked" screenAlign="bottomLeft" positionOrigin="bottomLeft" position="130px 77px" id="buttonsPC">
+		<GuiElement type="button" profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="backButton" />
+		<GuiElement type="button" profile="buttonOK" text="$l10n_button_ok" onClick="onClickOk" />
+		<GuiElement type="button" profile="buttonCancel" text="$l10n_button_reset" onClick="onClickResetButton" />	
+	</GuiElement>	
+</GUI>

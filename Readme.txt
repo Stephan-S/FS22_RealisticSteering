@@ -1,0 +1,2 @@
+This mod adjusts the steering speed in relation to the current vehicle speed.
+That way the tractor will react more sensitive when driving on the road which adds a better feeling of control as well as realism to the simulation.

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="62">
+    <author>Balu</author>
+	<title>
+		<en>Realistic Steering</en>
+		<de>Realistic Steering</de>
+	</title>
+	<description>
+		<en>
+<![CDATA[This mod adjusts the steering speed and angle in relation to the current vehicle speed.
+That way the tractor will react more sensitive when driving on the road which adds a better feeling of control as well as realism to the simulation.
+The parameters can be adjusted to your personal liking in an ingame menu.
+]]>
+		</en>
+		<de>
+<![CDATA[Dieser Mod passt die Lenkgeschwindigkeit und den maximalen Lenkwinkel jedes Fahrzeugs an die aktuelle Fahrzeuggeschwindigkeit an.
+Auf diese Art lässt sich ein Traktor wesentlich sensibler lenken was zu einem stabileren Fahrgefühl und mehr Realismusgefühl führt.
+Die Parameter können bequem über ein Ingame Menü an das persönliche Fahrgefühl angepasst werden.
+]]>
+	   </de>
+	</description>
+	
+    <version>1.0.0.0</version>
+	
+	<multiplayer supported="true"/>  
+	
+	<iconFilename>store.dds</iconFilename>
+
+	<l10n>
+		<text name="input_RealisticSteering_Toggle">	<en>RealisticSteering: On/Off</en>  												<de>RealisticSteering: An/Aus</de>												</text>
+		<text name="input_RealisticSteering_Settings">	<en>RealisticSteering: Open Settings</en>  											<de>RealisticSteering: Einstellungen öffnen</de>								</text>
+		<text name="gui_rs_Setting">					<en>Realistic Steering - Settings</en>  											<de>Realistic Steering - Einstellungen</de>										</text>
+		<text name="gui_rs_SteeringSpeedToolTip">		<en>Steering Speed reduction - at 50km/h</en>  										<de>Reduktion der Lenkgeschwindigkeit - bei 50km/h</de>							</text>
+		<text name="gui_rs_SteeringSpeed">				<en>Steering Speed reduction</en>  													<de>Reduktion Lenkgeschwindigkeit</de>											</text>
+		<text name="gui_rs_SteeringAngleLimitToolTip">	<en>Steering angle reduction - at 50km/h</en> 										<de>Maximale Lenkwinkelbegrenzung - bei 50km/h</de>								</text>
+		<text name="gui_rs_SteeringAngleLimit">			<en>Steering angle reduction</en>  													<de>Maximale Lenkwinkelbegrenzung</de>											</text>
+		<text name="gui_rs_ResetForceToolTip">			<en>Select the speed addition when returning the wheel to the center position</en> 	<de>Die Verstärkung die wirkt, wenn der Lenkwinkel wieder zentriert wird</de>	</text>
+		<text name="button_reset">						<en>Reset</en>  																	<de>Reset</de>																	</text>
+		<text name="gui_rs_ResetForce">					<en>Reset Force</en>  																<de>Rückstellkraft Faktor</de>													</text>
+	</l10n>
+
+    <extraSourceFiles>
+		<sourceFile filename="gui/rsGui.lua"/>
+        <sourceFile filename="register.lua" />
+    </extraSourceFiles>	
+	
+	<actions>
+		<action name="RealisticSteering_Toggle"    category="VEHICLE" ignoreComboMask="false"/>
+        <action name="RealisticSteering_Settings"	category="SYSTEM"   axisType="HALF" ignoreComboMask="false"/>	
+	</actions>
+	
+	<inputBinding>
+		<actionBinding action="RealisticSteering_Toggle">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_KP_6" />
+			<binding device="0_XINPUT_GAMEPAD" input="BUTTON_5 BUTTON_17" />
+		</actionBinding>
+		<actionBinding action="RealisticSteering_Settings">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_KP_5" />
+			<binding device="0_XINPUT_GAMEPAD" input="BUTTON_5 BUTTON_15" />
+		</actionBinding>
+	</inputBinding>
+	
+</modDesc>
+
