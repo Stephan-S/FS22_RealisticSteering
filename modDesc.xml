@@ -4,6 +4,7 @@
 	<title>
 		<en>Realistic Steering</en>
 		<de>Realistic Steering</de>
+		<it>Sterzo Realistico</it>
 	</title>
 	<description>
 		<en>
@@ -17,7 +18,13 @@ The parameters can be adjusted to your personal liking in an ingame menu.
 Auf diese Art lässt sich ein Traktor wesentlich sensibler lenken was zu einem stabileren Fahrgefühl und mehr Realismusgefühl führt.
 Die Parameter können bequem über ein Ingame Menü an das persönliche Fahrgefühl angepasst werden.
 ]]>
-	   </de>
+	   	</de>
+	   	<it>
+<![CDATA[Questa mod regola la velocità e l'angolo di sterzata in relazione alla velocità attuale del veicolo.
+In questo modo il trattore reagirà in modo più sensibile durante la guida su strada, il che aggiunge una migliore sensazione di controllo e realismo alla simulazione.
+I parametri possono essere regolati a proprio piacimento in un menù di gioco.
+]]>
+	  	</it>
 	</description>
 	
     <version>1.0.0.0</version>
@@ -27,16 +34,56 @@ Die Parameter können bequem über ein Ingame Menü an das persönliche Fahrgef�
 	<iconFilename>store.dds</iconFilename>
 
 	<l10n>
-		<text name="input_RealisticSteering_Toggle">	<en>RealisticSteering: On/Off</en>  												<de>RealisticSteering: An/Aus</de>												</text>
-		<text name="input_RealisticSteering_Settings">	<en>RealisticSteering: Open Settings</en>  											<de>RealisticSteering: Einstellungen öffnen</de>								</text>
-		<text name="gui_rs_Setting">					<en>Realistic Steering - Settings</en>  											<de>Realistic Steering - Einstellungen</de>										</text>
-		<text name="gui_rs_SteeringSpeedToolTip">		<en>Steering Speed reduction - at 50km/h</en>  										<de>Reduktion der Lenkgeschwindigkeit - bei 50km/h</de>							</text>
-		<text name="gui_rs_SteeringSpeed">				<en>Steering Speed reduction</en>  													<de>Reduktion Lenkgeschwindigkeit</de>											</text>
-		<text name="gui_rs_SteeringAngleLimitToolTip">	<en>Steering angle reduction - at 50km/h</en> 										<de>Maximale Lenkwinkelbegrenzung - bei 50km/h</de>								</text>
-		<text name="gui_rs_SteeringAngleLimit">			<en>Steering angle reduction</en>  													<de>Maximale Lenkwinkelbegrenzung</de>											</text>
-		<text name="gui_rs_ResetForceToolTip">			<en>Select the speed addition when returning the wheel to the center position</en> 	<de>Die Verstärkung die wirkt, wenn der Lenkwinkel wieder zentriert wird</de>	</text>
-		<text name="button_reset">						<en>Reset</en>  																	<de>Reset</de>																	</text>
-		<text name="gui_rs_ResetForce">					<en>Reset Force</en>  																<de>Rückstellkraft Faktor</de>													</text>
+		<text name="input_RealisticSteering_Toggle">
+			<en>RealisticSteering: On/Off</en>
+			<de>RealisticSteering: An/Aus</de>
+			<it>Sterzo Realistico: Attiva/Disattiva</it>
+		</text>
+		<text name="input_RealisticSteering_Settings">
+			<en>RealisticSteering: Open Settings</en>
+			<de>RealisticSteering: Einstellungen öffnen</de>
+			<it>Sterzo Realistico: Apri Impostazioni</it>
+		</text>
+		<text name="gui_rs_Setting">
+			<en>Realistic Steering - Settings</en>
+			<de>Realistic Steering - Einstellungen</de>
+			<it>Sterzo Realistico - Impostazioni</it>
+		</text>
+		<text name="gui_rs_SteeringSpeedToolTip">
+			<en>Steering Speed reduction - at 50km/h</en>
+			<de>Reduktion der Lenkgeschwindigkeit - bei 50km/h</de>
+			<it>Riduzione della velocità di sterzata - a 50 km/h</it>
+		</text>
+		<text name="gui_rs_SteeringSpeed">
+			<en>Steering Speed reduction</en>
+			<de>Reduktion Lenkgeschwindigkeit</de>
+			<it>Riduzione della velocità di sterzata</it>
+		</text>
+		<text name="gui_rs_SteeringAngleLimitToolTip">
+			<en>Steering angle reduction - at 50km/h</en>
+			<de>Maximale Lenkwinkelbegrenzung - bei 50km/h</de>
+			<it>Limitazione massima dell'angolo di sterzata - a 50 km/h</it>
+		</text>
+		<text name="gui_rs_SteeringAngleLimit">
+			<en>Steering angle reduction</en>
+			<de>Maximale Lenkwinkelbegrenzung</de>
+			<it>Limitazione massima dell'angolo di sterzata</it>
+		</text>
+		<text name="gui_rs_ResetForceToolTip">
+			<en>Select the speed addition when returning the wheel to the center position</en>
+			<de>Die Verstärkung die wirkt, wenn der Lenkwinkel wieder zentriert wird</de>
+			<it>Seleziona l'aggiunta di velocità quando si riporta la ruota nella posizione centrale</it>
+		</text>
+		<text name="button_reset">
+			<en>Reset</en>
+			<de>Reset</de>
+			<it>Ripristino</it>
+		</text>
+		<text name="gui_rs_ResetForce">
+			<en>Reset Force</en>
+			<de>Rückstellkraft Faktor</de>
+			<it>Ripristina la Forza</it>
+		</text>
 	</l10n>
 
     <extraSourceFiles>
